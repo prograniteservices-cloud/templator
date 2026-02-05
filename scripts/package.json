@@ -1,0 +1,11 @@
+{
+  "name": "firebase-setup",
+  "version": "1.0.0",
+  "description": "Firebase service initialization scripts",
+  "scripts": {
+    "enable-services": "node enable-firebase-services.js"
+  },
+  "dependencies": {
+    "googleapis": "^133.0.0"
+  }
+}

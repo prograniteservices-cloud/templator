@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Industrial Color Palette */
+  --background: #121212;
+  --foreground: #F5F5F0;
+  --accent: #FF5722;
+  --surface: #1a1a1a;
+  --surface-elevated: #242424;
+  --border: rgba(245, 245, 240, 0.1);
+  --border-hover: rgba(245, 245, 240, 0.2);
+  --text-primary: #F5F5F0;
+  --text-secondary: rgba(245, 245, 240, 0.7);
+  --text-muted: rgba(245, 245, 240, 0.5);
+}
+
+@layer base {
+  * {
+    @apply border-[#F5F5F0]/10;
+  }
+  
+  body {
+    @apply bg-[#121212] text-[#F5F5F0] antialiased;
+  }
+
+  /* Custom scrollbar for industrial aesthetic */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #121212;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #F5F5F0/20;
+    border-radius: 0;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #F5F5F0/30;
+  }
+}
+
+@layer utilities {
+  /* Industrial border utilities */
+  .border-industrial {
+    border-color: rgba(245, 245, 240, 0.1);
+  }
+
+  .border-industrial-hover {
+    border-color: rgba(245, 245, 240, 0.2);
+  }
+
+  /* Monospace text utility */
+  .font-mono-industrial {
+    font-family: var(--font-mono), ui-monospace, monospace;
+  }
+}
